@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beautiful Wife❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="flowers.png" type="image/x-icon">
+    <style>
+        /* Romantic Color Palette */
+        :root {
+            --pink: #ff69b4;
+            --deep-pink: #ff1493;
+            --rose: #ff6b6b;
+            --light-pink: #ffb6c1;
+            --purple: #9370db;
+            --white: #fff;
+            --dark-bg: #1a1a2e;
+        }
+
+        /* Base Romantic Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--dark-bg), #16213e, #0f3460);
+            font-family: 'Arial', sans-serif;
+            color: var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Romantic Glow Effects */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(
+                circle at center,
+                rgba(255, 105, 180, 0.15) 0%,
+                rgba(138, 43, 226, 0.1) 70%,
+                transparent 100%
+            );
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Floating Hearts Background */
+        .floating-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-heart {
+            position: absolute;
+            font-size: 24px;
+            color: rgba(255, 105, 180, 0.6);
+            animation: floatUp 10s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        /* Name Animation */
+        .greetings {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--pink);
+        }
+
+        .greetings span {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+            color: var(--light-pink);
+            margin: 0 5px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+                text-shadow: 0 10px 20px var(--deep-pink);
+            }
+        }
+
+        /* Romantic Description */
+        .description {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--white);
+            text-shadow: 0 0 15px var(--pink);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Romantic Button */
+        .btn {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, var(--pink), var(--purple));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--purple), var(--pink));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 50px;
+        }
+
+        .btn:hover::before {
+            opacity: 1;
+        }
+
+        .btn .text {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Heart Icon */
+        .fa-heart {
+            color: var(--rose);
+            margin-left: 10px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .greetings {
+                font-size: 2.5rem;
+            }
+            .description {
+                font-size: 1.5rem;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Name Animation -->
+    <div class="greetings">
+        <span style="--i:1">w</span>
+        <span style="--i:2">i</span>
+        <span style="--i:3">f</span>
+        <span style="--i:4">e</span>
+        <span style="--i:5">y</span>
+    </div>
+
+    <!-- Romantic Description -->
+    <div class="description">
+        <span>My Beloved <i class="fas fa-heart"></i></span>
+    </div>
+
+    <!-- Romantic Button -->
+    <div class="btn-container">
+        <a href="./flowers.html" class="btn">
+            <span class="text">Open Your Surprise</span>
+        </a>
+    </div>
+
+    <script>
+        // Create floating hearts
+        function createFloatingHearts() {
+            const heartEmojis = ['❤️', '💖', '💕', '💘', '💓', '💗', '💙', '💚', '💛', '💜', '🧡'];
+            const container = document.getElementById('floatingHearts');
+            
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'floating-heart';
+                    heart.innerHTML = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                    heart.style.animationDuration = (Math.random() * 10 + 5) + 's';
+                    heart.style.animationDelay = (Math.random() * 5) + 's';
+                    container.appendChild(heart);
+                    
+                    // Remove heart after animation completes
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 15000);
+                }, i * 300);
+            }
+            
+            // Keep creating hearts
+            setTimeout(createFloatingHearts, 3000);
+        }
+
+        // Start the animation
+        createFloatingHearts();
+
+        // Add hover effect to button
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('mouseenter', () => {
+            btn.style.transform = 'translateY(-3px)';
+            btn.style.boxShadow = '0 8px 20px rgba(255, 105, 180, 0.6)';
+        });
+
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translateY(0)';
+            btn.style.boxShadow = '0 5px 15px rgba(255, 105, 180, 0.4)';
+        });
+    </script>
+</body>
+</html>
