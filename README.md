@@ -50,15 +50,7 @@ Created with heartfelt intention, **Love\_zone** is a beautifully designed and e
   * [TypeIt.js](https://typeitjs.com/) for typing effects
   * Font Awesome for icons
 
-## 📸 Screenshots
 
-> Add screenshots or gifs showing:
->
-> * Homepage
-> * Love Meter
-> * Memory Lane
-> * Heart Section animation
-> * Swiper slide interaction
 
 ## 🧐 Suggestions for Improvement
 
